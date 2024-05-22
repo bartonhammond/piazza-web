@@ -11,7 +11,8 @@ services:
           fromDatabase:
             name: piazza-db
             property: connectionString
-	  sync: false
+        - key: RAILS_MASTER_KEY            
+      sync: false
 
 databases:
     - name: piazza-db
